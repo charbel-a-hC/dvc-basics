@@ -1,0 +1,4 @@
+[core]
+    remote = edge_ai
+['remote "edge_ai"']
+    url = ssh://charbel@100.103.52.68:2222/mnt/edge_ai/Active-Datasets
