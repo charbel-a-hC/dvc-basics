@@ -193,6 +193,7 @@ files = [
 ]
 
 [package.dependencies]
+bcrypt = {version = ">=3.1.3", optional = true, markers = "extra == \"bcrypt\""}
 cryptography = ">=39.0"
 typing-extensions = ">=3.6"
 
@@ -234,6 +235,46 @@ docs = ["furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-
 tests = ["attrs[tests-no-zope]", "zope-interface"]
 tests-mypy = ["mypy (>=1.6)", "pytest-mypy-plugins"]
 tests-no-zope = ["attrs[tests-mypy]", "cloudpickle", "hypothesis", "pympler", "pytest (>=4.3.0)", "pytest-xdist[psutil]"]
+
+[[package]]
+name = "bcrypt"
+version = "4.1.2"
+description = "Modern password hashing for your software and your servers"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "bcrypt-4.1.2-cp37-abi3-macosx_10_12_universal2.whl", hash = "sha256:ac621c093edb28200728a9cca214d7e838529e557027ef0581685909acd28b5e"},
+    {file = "bcrypt-4.1.2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ea505c97a5c465ab8c3ba75c0805a102ce526695cd6818c6de3b1a38f6f60da1"},
+    {file = "bcrypt-4.1.2-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:57fa9442758da926ed33a91644649d3e340a71e2d0a5a8de064fb621fd5a3326"},
+    {file = "bcrypt-4.1.2-cp37-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:eb3bd3321517916696233b5e0c67fd7d6281f0ef48e66812db35fc963a422a1c"},
+    {file = "bcrypt-4.1.2-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:6cad43d8c63f34b26aef462b6f5e44fdcf9860b723d2453b5d391258c4c8e966"},
+    {file = "bcrypt-4.1.2-cp37-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:44290ccc827d3a24604f2c8bcd00d0da349e336e6503656cb8192133e27335e2"},
+    {file = "bcrypt-4.1.2-cp37-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:732b3920a08eacf12f93e6b04ea276c489f1c8fb49344f564cca2adb663b3e4c"},
+    {file = "bcrypt-4.1.2-cp37-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:1c28973decf4e0e69cee78c68e30a523be441972c826703bb93099868a8ff5b5"},
+    {file = "bcrypt-4.1.2-cp37-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:b8df79979c5bae07f1db22dcc49cc5bccf08a0380ca5c6f391cbb5790355c0b0"},
+    {file = "bcrypt-4.1.2-cp37-abi3-win32.whl", hash = "sha256:fbe188b878313d01b7718390f31528be4010fed1faa798c5a1d0469c9c48c369"},
+    {file = "bcrypt-4.1.2-cp37-abi3-win_amd64.whl", hash = "sha256:9800ae5bd5077b13725e2e3934aa3c9c37e49d3ea3d06318010aa40f54c63551"},
+    {file = "bcrypt-4.1.2-cp39-abi3-macosx_10_12_universal2.whl", hash = "sha256:71b8be82bc46cedd61a9f4ccb6c1a493211d031415a34adde3669ee1b0afbb63"},
+    {file = "bcrypt-4.1.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:68e3c6642077b0c8092580c819c1684161262b2e30c4f45deb000c38947bf483"},
+    {file = "bcrypt-4.1.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:387e7e1af9a4dd636b9505a465032f2f5cb8e61ba1120e79a0e1cd0b512f3dfc"},
+    {file = "bcrypt-4.1.2-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:f70d9c61f9c4ca7d57f3bfe88a5ccf62546ffbadf3681bb1e268d9d2e41c91a7"},
+    {file = "bcrypt-4.1.2-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:2a298db2a8ab20056120b45e86c00a0a5eb50ec4075b6142db35f593b97cb3fb"},
+    {file = "bcrypt-4.1.2-cp39-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:ba55e40de38a24e2d78d34c2d36d6e864f93e0d79d0b6ce915e4335aa81d01b1"},
+    {file = "bcrypt-4.1.2-cp39-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:3566a88234e8de2ccae31968127b0ecccbb4cddb629da744165db72b58d88ca4"},
+    {file = "bcrypt-4.1.2-cp39-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:b90e216dc36864ae7132cb151ffe95155a37a14e0de3a8f64b49655dd959ff9c"},
+    {file = "bcrypt-4.1.2-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:69057b9fc5093ea1ab00dd24ede891f3e5e65bee040395fb1e66ee196f9c9b4a"},
+    {file = "bcrypt-4.1.2-cp39-abi3-win32.whl", hash = "sha256:02d9ef8915f72dd6daaef40e0baeef8a017ce624369f09754baf32bb32dba25f"},
+    {file = "bcrypt-4.1.2-cp39-abi3-win_amd64.whl", hash = "sha256:be3ab1071662f6065899fe08428e45c16aa36e28bc42921c4901a191fda6ee42"},
+    {file = "bcrypt-4.1.2-pp310-pypy310_pp73-manylinux_2_28_aarch64.whl", hash = "sha256:d75fc8cd0ba23f97bae88a6ec04e9e5351ff3c6ad06f38fe32ba50cbd0d11946"},
+    {file = "bcrypt-4.1.2-pp310-pypy310_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:a97e07e83e3262599434816f631cc4c7ca2aa8e9c072c1b1a7fec2ae809a1d2d"},
+    {file = "bcrypt-4.1.2-pp39-pypy39_pp73-manylinux_2_28_aarch64.whl", hash = "sha256:e51c42750b7585cee7892c2614be0d14107fad9581d1738d954a262556dd1aab"},
+    {file = "bcrypt-4.1.2-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:ba4e4cc26610581a6329b3937e02d319f5ad4b85b074846bf4fef8a8cf51e7bb"},
+    {file = "bcrypt-4.1.2.tar.gz", hash = "sha256:33313a1200a3ae90b75587ceac502b048b840fc69e7f7a0905b5f87fac7a1258"},
+]
+
+[package.extras]
+tests = ["pytest (>=3.2.1,!=3.3.0)"]
+typecheck = ["mypy"]
 
 [[package]]
 name = "billiard"
@@ -895,6 +936,25 @@ table = ["flatten-dict (>=0.4.1,<1)", "tabulate (>=0.8.7)"]
 tests = ["flatten-dict (>=0.4.1,<1)", "funcy (>=1.17)", "matplotlib", "mypy (==0.981)", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (>=0.9.6,<1.0)", "pytest-test-utils (>=0.0.6)", "tabulate (>=0.8.7)"]
 
 [[package]]
+name = "dvc-ssh"
+version = "3.0.0"
+description = "ssh plugin for dvc"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "dvc-ssh-3.0.0.tar.gz", hash = "sha256:5e56dabf49a4fbcfd54e04b530289d7bbe905bc5a195f97335743b60ce0de22c"},
+    {file = "dvc_ssh-3.0.0-py3-none-any.whl", hash = "sha256:2a94b138f9b58540c3002649516c0edc431cf334a436bab67b0266731d7a6a97"},
+]
+
+[package.dependencies]
+dvc = "*"
+sshfs = {version = ">=2023.4.1", extras = ["bcrypt"]}
+
+[package.extras]
+gssapi = ["sshfs[gssapi] (>=2021.11.2)"]
+tests = ["Pygments (==2.10.0)", "collective.checkdocs (==0.2)", "dvc[testing]", "filelock (==3.3.2)", "flaky (==3.7.0)", "mock (==4.0.3)", "mypy (==0.910)", "pydocstyle (==6.1.1)", "pylint (==2.15.9)", "pylint-plugin-utils (==0.6)", "pytest (==6.2.5)", "pytest-cov (==3.0.0)", "pytest-docker (>=1,<2)", "pytest-lazy-fixture (==0.6.3)", "pytest-mock (==3.6.1)", "pytest-xdist (==2.4.0)", "pywin32 (>=225)", "types-requests (==2.25.11)", "types-tabulate (==0.8.3)", "types-toml (==0.10.1)", "wget (==3.2)", "wheel (==0.37.0)", "xmltodict (==0.12.0)"]
+
+[[package]]
 name = "dvc-studio-client"
 version = "0.18.0"
 description = "Small library to post data from DVC/DVCLive to Iterative Studio"
@@ -1403,21 +1463,21 @@ files = [
 
 [[package]]
 name = "networkx"
-version = "3.2.1"
+version = "2.8.8"
 description = "Python package for creating and manipulating graphs and networks"
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.8"
 files = [
-    {file = "networkx-3.2.1-py3-none-any.whl", hash = "sha256:f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2"},
-    {file = "networkx-3.2.1.tar.gz", hash = "sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6"},
+    {file = "networkx-2.8.8-py3-none-any.whl", hash = "sha256:e435dfa75b1d7195c7b8378c3859f0445cd88c6b0375c181ed66823a9ceb7524"},
+    {file = "networkx-2.8.8.tar.gz", hash = "sha256:230d388117af870fce5647a3c52401fcf753e94720e6ea6b4197a5355648885e"},
 ]
 
 [package.extras]
-default = ["matplotlib (>=3.5)", "numpy (>=1.22)", "pandas (>=1.4)", "scipy (>=1.9,!=1.11.0,!=1.11.1)"]
-developer = ["changelist (==0.4)", "mypy (>=1.1)", "pre-commit (>=3.2)", "rtoml"]
-doc = ["nb2plots (>=0.7)", "nbconvert (<7.9)", "numpydoc (>=1.6)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.14)", "sphinx (>=7)", "sphinx-gallery (>=0.14)", "texext (>=0.6.7)"]
-extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.11)", "sympy (>=1.10)"]
-test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
+default = ["matplotlib (>=3.4)", "numpy (>=1.19)", "pandas (>=1.3)", "scipy (>=1.8)"]
+developer = ["mypy (>=0.982)", "pre-commit (>=2.20)"]
+doc = ["nb2plots (>=0.6)", "numpydoc (>=1.5)", "pillow (>=9.2)", "pydata-sphinx-theme (>=0.11)", "sphinx (>=5.2)", "sphinx-gallery (>=0.11)", "texext (>=0.6.6)"]
+extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.9)", "sympy (>=1.10)"]
+test = ["codecov (>=2.1)", "pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [[package]]
 name = "omegaconf"
@@ -1721,22 +1781,17 @@ typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
 name = "pydot"
-version = "2.0.0"
+version = "1.4.2"
 description = "Python interface to Graphviz's Dot"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
-    {file = "pydot-2.0.0-py3-none-any.whl", hash = "sha256:408a47913ea7bd5d2d34b274144880c1310c4aee901f353cf21fe2e526a4ea28"},
-    {file = "pydot-2.0.0.tar.gz", hash = "sha256:60246af215123fa062f21cd791be67dda23a6f280df09f68919e637a1e4f3235"},
+    {file = "pydot-1.4.2-py2.py3-none-any.whl", hash = "sha256:66c98190c65b8d2e2382a441b4c0edfdb4f4c025ef9cb9874de478fb0793a451"},
+    {file = "pydot-1.4.2.tar.gz", hash = "sha256:248081a39bcb56784deb018977e428605c1c758f10897a339fce1dd728ff007d"},
 ]
 
 [package.dependencies]
-pyparsing = ">=3"
-
-[package.extras]
-dev = ["black", "chardet"]
-release = ["zest.releaser[recommended]"]
-tests = ["black", "chardet", "tox"]
+pyparsing = ">=2.1.4"
 
 [[package]]
 name = "pygit2"
@@ -1805,17 +1860,14 @@ files = [
 
 [[package]]
 name = "pyparsing"
-version = "3.1.1"
-description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+version = "2.4.7"
+description = "Python parsing module"
 optional = false
-python-versions = ">=3.6.8"
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 files = [
-    {file = "pyparsing-3.1.1-py3-none-any.whl", hash = "sha256:32c7c0b711493c72ff18a981d24f28aaf9c1fb7ed5e9667c9e84e3db623bdbfb"},
-    {file = "pyparsing-3.1.1.tar.gz", hash = "sha256:ede28a1a32462f5a9705e07aea48001a08f7cf81a021585011deba701581a0db"},
+    {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
+    {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
 ]
-
-[package.extras]
-diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
 name = "python-dateutil"
@@ -2152,6 +2204,33 @@ dev = ["sqltrie[tests]"]
 tests = ["mypy (==0.971)", "pyinstaller", "pytest (==7.2.0)", "pytest-benchmark", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)"]
 
 [[package]]
+name = "sshfs"
+version = "2023.10.0"
+description = "SSH Filesystem -- Async SSH/SFTP backend for fsspec"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sshfs-2023.10.0-py3-none-any.whl", hash = "sha256:1f17a702150352479d83ba2cf136485a8e9820e6160b64629dec8fc0e5321df1"},
+    {file = "sshfs-2023.10.0.tar.gz", hash = "sha256:8f63f83dd05511552f3ac9590212888dff70dfd43645615b5c030190d2fe3a2b"},
+]
+
+[package.dependencies]
+asyncssh = [
+    {version = ">=2.11.0,<3"},
+    {version = "*", extras = ["bcrypt"], optional = true, markers = "extra == \"bcrypt\""},
+]
+fsspec = ">=2021.8.1"
+
+[package.extras]
+bcrypt = ["asyncssh[bcrypt]"]
+fido2 = ["asyncssh[fido2]"]
+gssapi = ["asyncssh[gssapi]"]
+libnacl = ["asyncssh[libnacl]"]
+pkcs11 = ["asyncssh[python-pkcs11]"]
+pyopenssl = ["asyncssh[pyopenssl]"]
+pywin32 = ["asyncssh[pywin32]"]
+
+[[package]]
 name = "tabulate"
 version = "0.9.0"
 description = "Pretty-print tabular data"
@@ -2411,4 +2490,4 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "84cf955f0acd71f4e37272538aaa81d72b130bd6591b513fb5596343bbf58c09"
+content-hash = "a2856914fdb378c9a3980928ce9e3e00c3dff3cbcc79050d7c829dee3865ce11"

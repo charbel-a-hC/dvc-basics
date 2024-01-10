@@ -12,10 +12,12 @@ poetry add dvc[s3]
 poetry shell
 ```
 
-### Add remote for data
+### Add remote for data (SSH)
 
 ```bash
-dvc remote add -d dataset s3://ups-football-dataset-bucket/dataset/
+dvc remote add -d ssh-remote ssh://100.103.52.68:22/mnt/edge_ai/Active-Datasets/
+dvc remote modify --local ssh-remote user youruser
+dvc remote modify --local ssh-remote password userpassword
 ```
 
 ### Add data to be tracked
