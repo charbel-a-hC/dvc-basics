@@ -1,4 +1,4 @@
 [core]
-    remote = edge_ai
-['remote "edge_ai"']
-    url = ssh://charbel@100.103.52.68:2222/mnt/edge_ai/Active-Datasets
+    remote = ssh-storage
+['remote "ssh-storage"']
+    url = ssh://100.103.52.68:22/mnt/edge_ai/Active-Datasets/sample_dataset
