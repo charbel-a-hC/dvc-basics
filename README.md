@@ -40,10 +40,6 @@ git push origin main
 ### Push Data to Remote
 
 ```bash
- dvc remote add -d dataset s3://ups-football-dataset-bucket/dataset/
-```
-
-```bash
 git add .\.dvc\
 ```
 
@@ -54,10 +50,6 @@ git push origin main
 
 ```bash
 dvc push
-```
-
-```bash
-rm .\dcereijo-player-scores\
 ```
 
 ```bash
